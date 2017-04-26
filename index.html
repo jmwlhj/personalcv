@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>个人简历</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/modernizr.custom.97074.js"></script>
+	<!-- js -->
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<script src="js/jquery.lazyload.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(
+		function($){
+			$("img").lazyload({
+				placeholder : "js/grey.gif",
+				effect      : "fadeIn",
+				threshold : 200
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- banner -->
+<div id="home" class="banner">
+	<div class="container">
+		<div class="banner-grids">
+			<div class="col-md-4 navigation">
+				<div class="nav-left">
+					<div class="grid__item color-4">
+						<a class="link link--kumya" href="#home"><span data-letters="个人简历">个人简历</span></a>
+					</div>
+				</div>
+				<div class="nav-right">
+						<span class="menu"><img src="images/menu.png" alt="menu" /></span>
+							<nav class="cl-effect-1">
+								<ul class="nav1">
+									<li><a class="scroll" href="#home">首页</a></li>
+									<li><a class="scroll" href="#about">关于我</a></li>
+									<li><a class="scroll" href="#skills">个人技能</a></li>
+									<li><a class="scroll" href="#portfolio">项目经验</a></li>
+									<li><a class="scroll" href="#services">工作经历</a></li>
+									<li><a class="scroll" href="#contact">联系方式</a></li>
+								</ul>
+							</nav>
+							<!-- script for menu -->
+							<script>
+								$( "span.menu" ).click(function() {
+								$( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								});
+								});
+							</script>
+							<!-- //script for menu -->
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-8 banner-image text-center">
+				<img src="images/banner.png" alt="个人肖像"/>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+
+<!-- about -->
+<div id="about" class="about">
+	<div class="container">
+		<div class="about-info">
+				<h3>关于我</h3>
+				<h4>个人介绍</h4>
+				<p><strong>姓名：</strong>景明伟&nbsp;&nbsp;<strong>性别：</strong>男&nbsp;&nbsp;<strong>年龄：</strong>28&nbsp;&nbsp;<strong>籍贯：</strong>河北邢台</p>
+		</div>
+		<div class="about-grids">
+		   	<div class="col-md-6 about-grid">
+		   		<h4>个人教育经历</h4>
+		   		<p>毕业于河北工程大学、电气工程及其自动化专业，因个人爱好计算机编程，所以在第一家公司的时候，利用业余时间自学web前端，希望通过自己的努力可以在这个行业站稳脚跟。</p>
+		   	</div>
+		   	<div class="col-md-6 about-grid">
+		   		<h4>自我评价</h4>
+		   		<p>1、为人诚实大方，做事认真，热情开朗，肯吃苦；2、有很好的协作能力、较强的团队意识和极强的责任感；3、对于工作我坚持“喜欢在做的事，做好在做的事”的原则；4、有较强的应变能力，能够较快的适应新环境；5、虽不善于表达自己，但是喜欢交朋友，爱好旅行，喜欢看一些编程类的书籍；</p>
+		   	</div>
+		   	<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- //about -->
+<!-- my skills -->
+<div id="skills" class="our-skills">
+	<div class="container">
+		<div class="skill-info">
+			<h2>个人技能</h2>
+		</div>
+		<section class="main">
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-1">
+						<div class="ch-info">
+							<h3>HTML/CSS熟练度达到98%</h3>
+							<p>HTML/CSS<a href="html/zhengzhan.html">相关作品</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-2">
+						<div class="ch-info">
+							<h3>可用JS原声代码写各种动画</h3>
+							<p>Javascript<a href="html/js.html">相关作品</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-3">
+						<div class="ch-info">
+							<h3>可用css3写酷炫的效果，HTML5写移动端和小游戏</h3>
+							<p>HTML5/CSS3<a href="html/juhuasuan.html">相关作品</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-4">
+						<div class="ch-info">
+							<h3>会使用基础框架jQuery、Bootstrap等</h3>
+							<p>框架<a href="http://drbl.in/ekhp">相关作品</a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+</div>
+<!-- //my skills -->
+<div id="portfolio" class="gallery">
+	<div class="container">
+		<script src="js/jquery.chocolat.js"></script>
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+		<!--light-box-files -->
+		<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$('.gallery a').Chocolat();
+		});
+		</script>
+		<h3>项目经验</h3>
+		<section>
+			<ul id="da-thumbs" class="da-thumbs">
+				<li>
+					<a href="images/a1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/a1.jpg" alt="" />
+						<div>
+							<h5>VIEW</h5>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="images/a2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/a2.jpg" alt="" />
+						<div>
+							<h5>VIEW</h5>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="images/a3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/a3.jpg" alt="" />
+						<div>
+							<h5>VIEW</h5>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="images/a4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/a4.jpg" alt="" />
+						<div>
+							<h5>VIEW</h5>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="images/a5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/a5.jpg" alt="" />
+						<div>
+							<h5>VIEW</h5>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="images/a6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/a6.jpg" alt="" />
+						<div>
+							<h5>VIEW</h5>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="images/a7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/a7.jpg" alt="" />
+						<div>
+							<h5>VIEW</h5>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="images/a1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/a1.jpg" alt="" />
+						<div>
+							<h5>VIEW</h5>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="images/a2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/a2.jpg" alt="" />
+						<div>
+							<h5>VIEW</h5>
+						</div>
+					</a>
+				</li>
+				<div class="clearfix"> </div>
+			</ul>
+		</section>
+			<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+				});
+			</script>
+    </div>
+</div>
+
+<div id="services" class="services">
+	<div class="container">
+		<div class="ser-head">
+			<h3>工作经历</h3>
+		</div>
+		<div class="wel-grids">
+			<div class="col-md-4 wel-grid text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					</figure>
+					<h3>北京丁典百维电子科技有限公司</h3>
+					<p>通讯设备维修工程师</p>
+					<p>2013.06-2015.02</p>
+				</div>
+			</div>
+			<div class="col-md-4 wel-grid btm-gre text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+					</figure>
+					<h3>北京京科博悦科技有限公司</h3>
+					<p>web前端开发工程师</p>
+					<p>2015.03-2016.09</p>
+				</div>
+			</div>
+			<div class="col-md-4 wel-grid text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+					</figure>
+					<h3>北京方寸志远科技有限公司</h3>
+					<p>web前端开发工程师</p>
+					<p>2016.09-2017.02</p>
+				</div>
+			</div>
+			<div class="col-md-4 wel-grid btm-gre text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+					</figure>
+					<h3>待定</h3>
+					<p></p>
+				</div>
+			</div>
+			<div class="col-md-4 wel-grid text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+					</figure>
+					<h3>待定</h3>
+					<p></p>
+				</div>
+			</div>
+			<div class="col-md-4 wel-grid btm-gre text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+					</figure>
+					<h3>待定</h3>
+					<p></p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--//services-->
+<!-- get-in -->
+<div id="contact" class="get-in-touch">
+	<div class="container">
+		<div class="get-info text-center">
+			<h3>我的联系方式</h3>
+			<h4><i>你可以随时联系我</i></h4>
+		</div>
+	</div>
+</div>
+<!-- //get-in -->
+<!-- contact-me -->
+<div class="contact-me">
+	<div class="container">
+		<div class="contact-grids">
+			<div class="col-md-4 contact-grid text-center">
+				<div class="point-icon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></div>
+				<p>北京市昌平区沙河镇于辛庄</p>
+			</div>
+			<div class="col-md-4 contact-grid text-center">
+				<div class="point-icon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+				<p><a href="mailto:info@example.com">jmwlhj@163.com</a></p>
+			</div>
+			<div class="col-md-4 contact-grid text-center">
+				<div class="point-icon"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></div>
+				<p>177 7819 0524</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="contact-info">
+			<form>
+				<input type="text" placeholder="姓名" required>
+				<input type="text" placeholder="邮箱" required>
+				<input type="text" placeholder="标题" required>
+				<textarea placeholder="留言" required></textarea>
+				<input type="submit" value="发送留言">
+			</form>
+		</div>
+	</div>
+</div>
+<!-- //contact-me -->
+<!-- footer -->
+<div class="copy-right">
+	<div class="container">
+		<p>Copyright &copy; 2016.Personal All rights reserved</p>
+	</div>
+</div>
+<!-- footer -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>

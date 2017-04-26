@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无限运动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: #3bb4f2;
+            border-radius: 50%;
+            position: absolute;
+            left: 200px;
+            top: 100px;
+        }
+    </style>
+    <script src="../js/move.js"></script>
+    <script>
+        window.onload=function(){
+            var oDiv=document.getElementById("div1");
+            var arr=[{left:100,top:100},{left:600,top:200},{left:300,top:300}];
+            var n=1;
+            function next(){
+                move(oDiv,arr[n%arr.length],{complete:function(){n++;next()}})}next()};
+    </script>
+</head>
+<body>
+<div id="div1"></div>
+</body>
+</html>

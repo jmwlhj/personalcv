@@ -1,0 +1,545 @@
+/*
+* @Author: JMW
+* @Date:   2017-03-16 10:12:55
+* @Last Modified by:   JMW
+* @Last Modified time: 2017-03-22 16:30:53
+*/
+ *{font-size:12px;font-family: "微软雅黑"}
+.wrapper{
+	width: 100%;
+	background:url(../images/chineseLanguageStudyimg/background.png) repeat;
+}
+.header{
+	width: 100%;
+	margin:0 auto;
+	height: 54px;
+	background: #c08738;
+}
+.topnav{
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 9999;
+}
+.header .header-text{
+	width: 1180px;
+	height: 54px;
+	margin: 0 auto;
+}
+.header .header-text .logo{
+	width: 144px;
+	height: 54px;
+	margin-left: 60px;
+}
+.header .header-text .logo .logo-img{
+	width: 38px;
+	height: 38px;
+	margin-top: 8px;
+}
+.header .header-text .logo .logo-text{
+	width: 100px;	
+	height: 34px;
+	margin-top: 10px;		
+}
+.header .header-text .logo h1{
+	font-size: 18px;
+	line-height: 54px;
+	color:#fff;
+}
+.header .header-text .nav{
+	width: 900px;
+	height: 54px;
+}
+.header .header-text .nav .nav-text{	
+	padding: 10px 0px;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+}
+.header .header-text .nav .nav-text .nav-text0{
+	display:inline-block;
+	padding: 2px 20px;
+	color:#f9dabb;
+	font-size: 14px;
+	font-weight: bold;
+}
+.header .header-text .nav .nav-text div{
+	width: 124px;
+	height:5px;
+	background: url(../images/chineseLanguageStudyimg/bg1.png) no-repeat center top;
+	position:absolute;
+	top:48px;
+	left:-16px;
+	z-index: 3;
+	display: none;
+}
+.header .header-text .nav .nav-text .sysgk{
+	width: 124px;
+	height: 296px;
+	position: absolute;
+	top: 5px;
+	box-shadow: 1px 1px 2px;
+	background: #7db5d6;
+}
+.header .header-text .nav .nav-text .sysgk li{
+	margin:12px 0px -8px 28px; 
+	/* padding:3px 26px;*/
+}
+.header .header-text .nav .nav-text .sysgk li a{
+	color:#fff;
+}
+.header .header-text .nav .nav-text .sysgk li:hover a{
+	color:#ffc000;
+}
+.content{
+	width: 100%;
+	position: relative;
+}
+.content #lunbo{
+	width: 1180px;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+	margin:0 auto;
+	overflow: hidden;
+	z-index: 2;
+}
+#lunbo .slideshow{ 
+	position:relative; 
+	width:1180px; 
+	height:600px; 
+}
+#lunbo .slideshow_item{ 
+	width:1180px; 
+	height:600px; 
+}
+#lunbo .slideshow_item .data{ 
+	display:none; 
+}
+#lunbo .slideshow_paging { 
+	position:absolute; 
+	bottom:10px; 
+	left:50%;
+	margin-left:-58px; 
+	z-index:11; 
+	font-size:12px; 
+	padding:3px 2px;
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border-radius: 4px;
+}
+#lunbo .slideshow_paging a { 
+	display:block; 
+	float:left; 
+	margin:0 1px; 
+	padding:4px 14px; 
+	color:#ccc; 
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border-radius: 4px; 
+}
+#lunbo .slideshow_paging a:hover { 
+	color:#fff 
+}
+#lunbo .slideshow_paging a.activeSlide { 
+	background:#eee; 
+	color:#222 
+}
+#lunbo .slideshow_box { 
+	position:absolute; 
+	left:0; 
+	bottom:60px; 
+	width:100%; 
+	height:188px; 
+	z-index:10;  
+}
+#lunbo .slideshow_box .data h3{
+	font-size: 21px;
+	color:#000;
+	margin:20px 0 0 128px;
+	font-weight: bold;
+}
+#lunbo .slideshow_box .data h4{
+	font-size: 13px;
+	color:#4b4c4e;
+	margin:20px 0 0 54px;
+	line-height: 18px;
+	text-indent: 2em;
+}
+#lunbo .slideshow_box .data p{
+	font-size: 12px;
+	margin:12px 0 0 50px;
+	color:#fff;
+	line-height: 18px;
+	text-indent: 4em;
+	font-style: italic;
+}
+#lunbo .slideshow_box .data a{
+	float: left;
+	display: inline-block;
+	width: 96px;
+	height: 38px;
+	background:#599faa;
+	color:#fff;
+	text-align: center;
+	line-height: 38px;
+	margin:96px 0 0 180px;
+	border-radius: 4px;
+}
+#lunbo .slideshow_box .data a:hover{
+	color:#ffc000;
+}
+#lunbo .mask0{
+	width: 100%;
+	height: 188px;
+	background:#fff;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	position: absolute;
+	left:0;
+	bottom:60px;
+	z-index: 9;
+}
+#lunbo .prev,#lunbo .next{
+	display:block;
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	background: url(../images/chineseLanguageStudyimg/ad_ctr2.png) no-repeat;
+	top:50%;
+	cursor: pointer;
+	opacity: 0.25;
+	filter: alpha(opacity=25);
+	-webkit-transition: all .3s ease;
+	margin-top:-27px;
+	z-index: 14;
+}
+.content #lunbo:hover a{
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+.content #lunbo a.prev{
+	left: 30px;
+}
+.content #lunbo a.next{
+	background-position: 0 -55px;
+	right:30px;
+}
+.content .bg1{
+	width: 100%;
+	height: 630px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background:#eee;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+.content .News{
+	width: 1178px;
+	height: 498px;
+	border:1px solid #e6e6e6;
+	margin:60px auto 0;
+	z-index: 1;
+	background:#fdfdfd;
+	position: relative;
+}
+.content .News .news{
+	margin:30px 0 0 30px;
+}
+.content .News .news .box-hover-model{
+	width: 264px;
+	height: 430px;
+	float: left;
+	margin-right:20px;
+	background: #f1f1f1;
+	overflow: hidden;
+	position: relative;
+}
+.content .News .news .box-hover-model .box-hover-model-con h2{
+	font-size: 16px;
+	margin: 40px 0 0 25px;
+}
+.content .News .news .box-hover-model .box-hover-model-con .line{
+	width: 226px;
+	margin: 6px 0 0 20px;
+	border: 1px solid #7e7e7e;
+}
+.content .News .news .box-hover-model .box-hover-model-con  .news-content{
+	width: 216px;
+	height: 300px;
+	margin:25px 24px 0;
+}
+.content .News .news .box-hover-model .box-hover-model-con  .news-content img{
+	margin-left:40px;
+}
+.content .News .news .box-hover-model .box-hover-model-con  .news-content h3{
+	font-size: 16px;
+	color:#ecaa00;
+}
+.content .News .news .box-hover-model .box-hover-model-con  .news-content p{
+	line-height: 24px;
+    letter-spacing: 4px;
+    text-indent: 2em;
+    color: #535252;
+    font-weight: bold;
+    margin:0 8px;
+}
+.content .News .news .box-hover-model .box-hover-model-con  .news-content span{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #ffc000;
+	float: left;
+	margin:8px 0 0 10px;
+}
+.content .News .news .box-hover-model .box-hover-model-con  .news-content li{
+	width: 216px;
+	height: 82px;
+	color:#535252;
+	overflow: hidden;
+}
+.content .News .news .box-hover-model .box-hover-model-con  .news-content li .news-con{
+	display: inline-block;
+	float: right;
+	width: 180px;
+	margin-left: 16px;
+	line-height: 24px;
+	letter-spacing: 4px;
+	font-weight: bold;
+	color:#535252;
+}
+.content .News .news .box-hover-model .box-hover-model-con  .news-content .detail{
+	display: block;
+    width: 216px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background: #57a8b3;
+    margin: 20px auto 0;
+    color: #fff;
+    border-radius: 4px;
+}
+.content .News .news .box-hover-model .mask2{
+	position: absolute;
+	background: #000;
+	opacity: 0.1;
+	filter: alpha(opacity=10);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.content .bg2{
+	width: 100%;
+	height: 560px;
+	background: #fff;
+	position: absolute;
+	left:0;
+	top:630px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.content .szhpt{
+	width: 1180px;
+	height: 362px;
+	margin:60px auto 30px;
+	background:#f0f0f0;
+	position: relative;
+	z-index: 2;
+}
+.content .szhpt .mask1{
+	width: 1180px;
+	height: 362px;
+	background:#fff;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+	position: absolute;
+	left:50%;
+	margin-left:-590px;
+	top:0;
+}
+.content .szhpt img{
+	position: absolute;
+	left:70px;
+	top:60px;
+}
+.content .szhpt .szhpt-img{
+	left:154px;
+	top:96px;
+	cursor: pointer;
+}
+.content .szhpt .szhpt-text{
+	position: absolute;
+	right: 180px;
+	top: 52px;
+	width: 364px;
+	z-index: 99;
+}
+.content .szhpt .szhpt-text h2{
+	font-size: 26px;
+	color:#585858;
+}
+.content .szhpt .szhpt-text p{
+	margin:15px 0 0 4px;
+	font-size: 18px;
+}
+.content .szhpt .szhpt-text ul{
+	margin:15px 0 0 25px;
+}
+.content .szhpt .szhpt-text ul li{
+	line-height: 24px;
+	list-style:disc;
+}
+.content .szhpt .szhpt-text a{
+	display: inline-block;
+    width: 100px;
+    height: 40px;
+    background: #57a8b3;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px 0 0 5px;
+}
+.content .hzdb{
+	width: 100%;
+	height: 76px;
+	background: #c08738;
+}
+.content .hzdb .hzdb-content{
+	width: 1180px;
+	height: 76px;
+	margin:0 auto;
+	position: relative;
+}
+.content .hzdb p{
+	font-size: 20px;
+	color:#f4ebdd;
+	display:inline-block;
+	position: absolute;
+	left:50px;
+	top:24px;
+}
+.content .hzdb a{
+	display: inline-block;
+	line-height: 45px;
+	width: 190px;
+	height: 45px;
+	border-radius: 20px;
+	background: #e1c59f;
+	text-align: center;
+	position: absolute;
+	right: 60px;
+	top: 16px;
+	font-size: 12px;
+	color:#696052;
+}
+.footer{
+	width: 100%;
+	height: 370px;
+	margin:0 auto;
+	background: #cfa468;
+	padding-top:20px;
+}
+.footer .footer-nav{
+	width: 1150px;
+	height: 200px;
+	margin:0 auto;
+	padding-left: 30px;
+}
+.footer .footer-nav ul{
+	float:left;
+	margin:0 40px 0 20px;
+	font-size: 14px;
+	color:#99774b;
+}
+.footer .footer-nav ul li{
+	line-height: 24px;
+}
+.footer .footer-nav ul li:first-child{
+	font-size: 18px;
+	line-height: 48px;
+	color:#7a5e35;
+	font-weight: bold;
+}
+.footer .footer-nav ul li:hover a{
+	color:#edddc7;
+}
+.footer .bsd{
+	text-align: center;
+}
+.footer .bsd img{
+	opacity: 0.45;
+	filter: alpha(opacity=45);
+}
+.footer .bsd p{
+	font-size: 14px;
+	color:#6b5132;
+}
+/*返回顶部*/
+.cbbfixed{
+	position: fixed;
+	right: 10px;
+	transition: bottom ease .3s;
+	bottom: -85px;
+	z-index: 3;
+	cursor:pointer;
+}
+.cbbfixed .cbbtn {
+	width: 40px;
+	height: 40px;
+	display: block;
+	background-color: #02a2aa;
+}
+.cbbfixed .gotop {
+	transition: background-color ease .3s;
+	margin-top: 1px;
+}
+.cbbfixed .gotop .up-icon{
+	float:left;
+	margin:14px 0 0 9px;
+	width:23px;
+	height:12px;
+	background: url(../images/chineseLanguageStudyimg/side-icon02.png);
+}
+.cbbfixed .gotop:hover {
+	background-color:#2c2d2e;
+}
+.cbbfixed .cweixin {
+	background: #dadbdd;
+}
+.cbbfixed .cweixin div {
+	background: url(../images/chineseLanguageStudyimg/erwei.png);
+	width: 194px;
+	height: 199px;
+	position: absolute;
+	left: -194px;
+	top: -115px;
+	opacity: 0;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	transform-origin: 100% 70%;
+	-webkit-transform-origin: 100% 70%;
+	transition: transform ease .3s,opacity ease .3s;
+	-webkit-transition: all ease .3s;
+	display:none\0;
+	*display:none;
+}
+.cbbfixed .cweixin:hover div {
+	display: block;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	opacity: 1;
+	*display:block;
+}
+.cbbfixed .cweixin .weixin-icon{
+	float: left;
+	margin:12px 0 0 11px;
+	width:18px;
+	height: 18px;
+	background: url(../images/chineseLanguageStudyimg/side-icon01.png);
+}

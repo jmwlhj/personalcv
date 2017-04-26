@@ -1,0 +1,164 @@
+/****************************BANNER***********************************/
+.banner{width:1000px; height:410px; margin:0 auto; background:url(../images/aiqiyiimg/banner1.png) no-repeat;}
+.banner .bn0{width:736px; height:30px; margin-left:264px; padding-top:10px;}
+.banner .bn0 input{width:314px; height:28px; border:1px solid #c2c2c2; background:none;}
+.banner .bn0 .search{display:block; width:90px; height:30px; margin-left:-90px;}
+.banner .bn0 .search img{border:none;}
+.banner .bn0 .list0{width:382px; height:30px; margin-left:38px;}
+.banner .bn0 .list0 li a{display:inline-block; font-size:13px; color:#dedede; line-height:30px; padding-right:10px; position:relative;}
+.banner .bn0 .list0 li a img{border:none; vertical-align:middle;}
+.banner .bn0 .list0 li a .one{margin-top:-2px;}
+.banner .bn0 .list0 li a div{width:7px; height:7px; background:#f45910; border-radius:50%; position:absolute; right:16px; top:4px;}
+.banner .bn0 .list0 li a .one2{position:absolute; right:2px; top:4px;}
+.banner .bn1{width:235px; height:364px; background:url(../images/aiqiyiimg/banner5.png); margin-left:764px; margin-top:4px;}
+.banner .bn1 .list1{width:203px; height:345px; padding-top:10px; padding-left:10px}
+.banner .bn1 .list1 li a{display:block; width:203px; height:34.5px; line-height:34.5px; padding-left:10px; font-size:13px; color:#dedede;}
+.banner .bn1 .list1 li a:hover{background:#75b200; color:#fff;}
+
+/****************************NAV***********************************/
+.nav{width:1000px; height:106px; margin:0 auto; background:#000; position:relative;}
+.nav .nav0{width:981px; height:91px; position:absolute; left:50%; top:50%; margin-left:-490px; margin-top:-45px; background:url(../images/aiqiyiimg/nav.png);}
+.nav .nav0 .logo{width:130px; height:52px; margin-left:18px; margin-top:18px;}
+.nav .nav0 .logo a{display:block; text-indent:-999em; width:110px; height:36px; background:url(../images/aiqiyiimg/nav2.png);}
+.nav .nav0 .logo p{font-size:11px; color:#ccc; letter-spacing:20px; margin-top:5px;}
+.nav .nav0 .nav0-1{width:830px; height:76px;}
+.nav .nav0 .nav0-1 .list2 .text .img1{margin-top:2px;}
+.nav .nav0 .nav0-1 .list2 .text ul{padding-right:15px; padding-left:15px; margin-top:7px;}
+.nav .nav0 .nav0-1 .list2 .text .first{padding-left:0;}
+.nav .nav0 .nav0-1 .list2 .text ul .text1{position:relative;}
+.nav .nav0 .nav0-1 .list2 .text ul .text1 a{display:block;font-size:13px; color:#ccc; margin-top:8px;}
+.nav .nav0 .nav0-1 .list2 .text ul .text1 a span{color:#fcff0d;}
+.nav .nav0 .nav0-1 .list2 .text ul .text1 a:hover{color:#75b200;}
+.nav .nav0 .nav0-1 .list2 .text ul .text1 div{width:6px; height:6px; background:#f45910; border-radius:50%; margin-top:8px; margin-left:3px;}
+
+/****************************CONTENT***********************************/
+.content1{width:980px; height:438px; margin:25px auto 0;}
+.content1 .ct1-l{width:380px; height:438px;}
+.content1 .ct1-l .ct1-l1{width:380px; height:40px; border-bottom:2px solid #85ba4d;}
+.content1 .ct1-l .ct1-l1 a{color:#85ba4d; display:inline-block;}
+.content1 .ct1-l .ct1-l1 .a1{font-size:24px; margin-top:6px;}
+.content1 .ct1-l .ct1-l1 .a2{font-size:14px; margin-top:16px; margin-left:4px;}
+.content1 .ct1-l .ct1-l1 .ct1-box{width:64px; height:24px; background:url(../images/aiqiyiimg/ct1.png); margin-top:6px;}
+.content1 .ct1-l .ct1-l1 .ct1-box img{margin:4px 0 0 6px;}
+.content1 .ct1-l .ct1-l1 .ct1-box span{font-size:14px; color:#2e2e2e; line-height:24px;}
+.content1 .ct1-l .list3 dt{font-size:18px; color:#333; margin-left:20px; margin-top:22px;}
+.content1 .ct1-l .list3 dd{font-size:15px; color:#333; padding-left:20px; background:url(../images/aiqiyiimg/ct3.png) no-repeat 0 center; margin-top:16px;}
+.content1 .ct1-l .ct1-l2{width:380px; height:136px; margin-top:16px;}
+.content1 .ct1-l .ct1-l2 .ct1-l2l{width:180px; height:136px; background:#f2f2f2;}
+.content1 .ct1-l .ct1-l2 .ct1-l2l a{display:block; line-height:35px; text-align:center; font-size:14px; color:#333;}
+.content1 .ct1-m{width:380px; height:438px; margin:0 20px;}
+.content1 .ct1-m .ct1-m1{width:380px; height:252px; position:relative;}
+.content1 .ct1-m .ct1-m1 a{display:block; width:328px; height:42px; background:url(../images/aiqiyiimg/ct6.png) no-repeat 8px center rgba(0,0,0,0.5); font-size:15px; color:#fff; position:absolute; left:0; bottom:0; line-height:42px; padding-left:52px; z-index:1;}
+.content1 .ct1-m .list4 li{background:url(../images/aiqiyiimg/ct3.png) no-repeat 0 center; font-size:15px; color:#333; padding-left:20px; margin-top:20px;}
+.content1 .ct1-r{width:180px; height:438px;}
+.content1 .ct1-r div{width:180px; height:136px; background:#f2f2f2;}
+.content1 .ct1-r .ct1-r1{margin:15px 0;}
+.content1 .ct1-r div a{display:block; line-height:35px; text-align:center; font-size:14px; color:#333;}
+
+.content2{width:980px; height:400px; margin:38px auto 0;}
+.content2 .ct2l{width:780px; height:400px;}
+.content2 .ct2l .ct2l-t{width:780px; height:48px; border-bottom:2px solid #85ba4d; background:url(../images/aiqiyiimg/ct11.png) no-repeat 0 center;}
+.content2 .ct2l .ct2l-t p{font-size:28px; color:#699f00; line-height:48px; margin-left:20px; font-weight:bold;}
+.content2 .ct2l .ct2l-t .a3{font-size:14px; color:#699f00; margin:17px 0 0 8px;}
+.content2 .ct2l .ct2l-t .list5{margin-left:28px;}
+.content2 .ct2l .ct2l-t .list5 li a{display:inline-block; background:url(../images/aiqiyiimg/ct12.png) no-repeat right center; padding:0 22px 0 8px; font-size:14px; color:#333; margin-top:17px;}
+.content2 .ct2l .ct2l-t .list5 li .last{background:none;}
+.content2 .ct2l .ct2l-t div{width:100px; height:48px;}
+.content2 .ct2l .ct2l-t div img{margin-top:14px;}
+.content2 .ct2l .ct2l-d{width:780px; height:326px; margin-top:24px;}
+.content2 .ct2l .ct2l-d .ct2l-dl{width:380px; height:326px; background:url(../images/aiqiyiimg/ct16.png) no-repeat 0 0 #f2f2f2; position:relative;}
+.content2 .ct2l .ct2l-d .ct2l-dl .img2{position:absolute; left:0; top:0;}
+.content2 .ct2l .ct2l-d .ct2l-dl .img3{position:absolute; right:0; top:0;}
+.content2 .ct2l .ct2l-d .ct2l-dl span{display:inline-block; font-size:10px; color:#fff; background:rgba(0,0,0,0.5); padding:0 4px; height:16px; line-height:18px; text-align:center;}
+.content2 .ct2l .ct2l-d .ct2l-dl .text2{position:absolute; left:4px; bottom:60px;}
+.content2 .ct2l .ct2l-d .ct2l-dl .text3{position:absolute; right:4px; bottom:60px;}
+.content2 .ct2l .ct2l-d .ct2l-dl .a4{font-size:13px; color:#333; position:absolute; left:6px; bottom:32px;}
+.content2 .ct2l .ct2l-d .ct2l-dl .a5{font-size:11px; color:#999; position:absolute; left:6px; bottom:12px;}
+.content2 .ct2l .ct2l-d .ct2l-dr{width:380px; height:326px;}
+.content2 .ct2l .ct2l-d .ct2l-dr .ct2l-dr-l{width:180px; height:326px;}
+.content2 .ct2l .ct2l-d .ct2l-dr .ct2l-dr-l div{width:180px; height:155px; position:relative;  background:#f2f2f2;}
+.content2 .ct2l .ct2l-d .ct2l-dr .ct2l-dr-l .one1{margin-bottom:16px;}
+.content2 .ct2l .ct2l-d .ct2l-dr .ct2l-dr-l div .img4{position:absolute; right:0; top:0;}
+.content2 .ct2l .ct2l-d .ct2l-dr .ct2l-dr-l div span{display:inline-block; font-size:10px; color:#fff; background:rgba(0,0,0,0.5); padding:0 4px; height:16px; line-height:18px; text-align:center;}
+.content2 .ct2l .ct2l-d .ct2l-dr .ct2l-dr-l div .text4{position:absolute; left:4px; bottom:58px;}
+.content2 .ct2l .ct2l-d .ct2l-dr .ct2l-dr-l div .text5{position:absolute; right:4px; bottom:58px;}
+.content2 .ct2l .ct2l-d .ct2l-dr .ct2l-dr-l div .a6{font-size:13px; color:#333; position:absolute; left:6px; bottom:30px;}
+.content2 .ct2l .ct2l-d .ct2l-dr .ct2l-dr-l div .a7{font-size:11px; color:#999; position:absolute; left:6px; bottom:10px;}
+.content2 .ct2r{width:180px; height:400px; background:#f2f2f2;}
+.content2 .ct2r .ct2r-t{width:180px; height:48px; border-bottom:2px solid #85ba4d; background:url(../images/aiqiyiimg/ct11.png) no-repeat 0 center;}
+.content2 .ct2r .ct2r-t p{font-size:28px; color:#699f00; line-height:48px; margin-left:20px; font-weight:bold;}
+.content2 .ct2r .ct2r-t a{font-size:14px; color:#699f00; margin:17px 0 0 8px;}
+.content2 .ct2r .ct2r-d{width:180px; height:326px; margin-top:24px;}
+.content2 .ct2r .ct2r-d .ct2r-d1{width:180px; height:136px;}
+.content2 .ct2r .ct2r-d .ct2r-d1 a{display:block; line-height:35px; text-align:center; font-size:14px; color:#333;}
+.content2 .ct2r .ct2r-d .list6{width:170px; height:260px; margin:3px auto 0; border-top:1px dotted #ccc;}
+.content2 .ct2r .ct2r-d .list6 li a{display:inline-block; background:url(../images/aiqiyiimg/ct23.png) no-repeat 5px center; padding-left:17px; font-size:14px; color:#8a8a8a; margin-top:14px; margin-bottom:6px;}
+
+.content3{width:980px; height:214px; margin:12px auto 0;}
+.content3 .ct3-t{width:980px; height:44px; border-bottom:1px solid #e1e1e1;}
+.content3 .ct3-t p{font-size:20px; line-height:44px; color:#699f00;}
+.content3 .ct3-t p img{margin-top:12px; margin-left:5px;}
+.content3 .ct3-t p a{color:#699f00; font-size:13px; margin-left:12px;}
+.content3 .ct3-d{width:980px; height:155px;}
+.content3 .list7{margin-top:15px;}
+.content3 .list7 li{width:180px; height:155px; position:relative; background:#f2f2f2; box-sizing:border-box; margin-right:20px;}
+.content3 .list7 .last2{margin-right:0;}
+.content3 .list7 li .img6{position:absolute; right:0; top:0;}
+.content3 .list7 li span{display:inline-block; font-size:10px; color:#fff; background:rgba(0,0,0,0.5); padding:0 4px; height:16px; line-height:18px; text-align:center;}
+.content3 .list7 li .text6{position:absolute; left:4px; bottom:58px;}
+.content3 .list7 li .text7{position:absolute; right:4px; bottom:58px;}
+.content3 .list7 li p{font-size:13px; color:#333; position:absolute; left:5px; bottom:4px; padding:0 5px; line-height:23px;}
+.content3 .list7 li p span{display:inline-block; font-size:11px; color:#699f00; width:54px; height:19px; border:1px solid #cfcfcf; background:#fff; text-align:center; line-height:19px;}
+
+.content3 .list7 li .a8{font-size:13px; color:#333; position:absolute; left:6px; bottom:32px;}
+.content3 .list7 li .a9{font-size:11px; color:#999; position:absolute; left:6px; bottom:12px;}
+
+.content4{width:980px; height:100px; margin:50px auto 0;}
+
+.content5{width:980px; height:400px; margin:38px auto 0;}
+.content5 .ct5t{width:980px; height:48px; border-bottom:2px solid #85ba4d; background:url(../images/aiqiyiimg/ct11.png) no-repeat 0 center;}
+.content5 .ct5t p{font-size:28px; color:#699f00; line-height:48px; margin-left:20px; font-weight:bold;}
+.content5 .ct5t .a10{font-size:14px; color:#699f00; margin:17px 0 0 8px;}
+.content5 .ct5t .list8{margin-left:28px;}
+.content5 .ct5t .list8 li a{display:inline-block; background:url(../images/aiqiyiimg/ct12.png) no-repeat right center; padding:0 22px 0 8px; font-size:14px; color:#333; margin-top:17px;}
+.content5 .ct5t .list8 li .last{background:none;}
+
+.content5 .ct5d{width:980px; height:326px; margin-top:24px;}
+.content5 .ct5d .ct5dl{width:380px; height:326px; background:url(../images/aiqiyiimg/ct38.png) no-repeat 0 0 #f2f2f2; position:relative;}
+.content5 .ct5d .ct5dl .img2{position:absolute; left:0; top:0;}
+.content5 .ct5d .ct5dl .img3{position:absolute; right:0; top:0;}
+.content5 .ct5d .ct5dl span{display:inline-block; font-size:10px; color:#fff; background:rgba(0,0,0,0.5); padding:0 4px; height:16px; line-height:18px; text-align:center;}
+.content5 .ct5d .ct5dl .text2{position:absolute; left:4px; bottom:60px;}
+.content5 .ct5d .ct5dl .text3{position:absolute; right:4px; bottom:60px;}
+.content5 .ct5d .ct5dl .a4{font-size:13px; color:#333; position:absolute; left:6px; bottom:32px;}
+.content5 .ct5d .ct5dl .a5{font-size:11px; color:#999; position:absolute; left:6px; bottom:12px;}
+.content5 .ct5d .ct5dr{width:580px; height:326px;}
+.ct5d .ct5dr .ct5dr-l{width:180px; height:326px; margin-right:20px;}
+.content5 .ct5d .ct5dr .last3{margin-right:-20px;}
+.content5 .ct5d .ct5dr .ct5dr-l div{width:180px; height:155px; position:relative;  background:#f2f2f2;}
+.content5 .ct5d .ct5dr .ct5dr-l .one1{margin-bottom:16px;}
+.content5 .ct5d .ct5dr .ct5dr-l div .img4{position:absolute; right:0; top:0;}
+.content5 .ct5d .ct5dr .ct5dr-l div .img5{position:absolute; left:0; top:0;}
+.content5 .ct5d .ct5dr .ct5dr-l div span{display:inline-block; font-size:10px; color:#fff; background:rgba(0,0,0,0.5); padding:0 4px; height:16px; line-height:18px; text-align:center;}
+.content5 .ct5d .ct5dr .ct5dr-l div .text4{position:absolute; left:4px; bottom:58px;}
+.content5 .ct5d .ct5dr .ct5dr-l div .text5{position:absolute; right:4px; bottom:58px;}
+.content5 .ct5d .ct5dr .ct5dr-l div p{font-size:13px; color:#333; position:absolute; left:5px; bottom:4px; padding:0 5px; line-height:23px;}
+.content5 .ct5d .ct5dr .ct5dr-l div .a6{font-size:13px; color:#333; position:absolute; left:6px; bottom:30px;}
+.content5 .ct5d .ct5dr .ct5dr-l div .a7{font-size:11px; color:#999; position:absolute; left:6px; bottom:10px;}
+.content5 .ct5d .jmw{width:380px; height:326px;}
+.content5 .ct5d .jmw .ct5dr-l div{width:180px; height:155px; position:relative;  background:#f2f2f2;}
+.content5 .ct5d .jmw .ct5dr-l .one1{margin-bottom:16px;}
+.content5 .ct5d .jmw .ct5dr-l div .img4{position:absolute; right:0; top:0;}
+.content5 .ct5d .jmw .ct5dr-l div .img5{position:absolute; left:0; top:0;}
+.content5 .ct5d .jmw .ct5dr-l div span{display:inline-block; font-size:10px; color:#fff; background:rgba(0,0,0,0.5); padding:0 4px; height:16px; line-height:18px; text-align:center;}
+.content5 .ct5d .jmw .ct5dr-l div .text4{position:absolute; left:4px; bottom:58px;}
+.content5 .ct5d .jmw .ct5dr-l div .text5{position:absolute; right:4px; bottom:58px;}
+.content5 .ct5d .jmw .ct5dr-l div .a6{font-size:13px; color:#333; position:absolute; left:6px; bottom:30px;}
+.content5 .ct5d .jmw .ct5dr-l div .a7{font-size:11px; color:#999; position:absolute; left:6px; bottom:10px;}
+
+.content6{width:984px; height:184px; margin:40px auto 0;}
+.content6 .ct6t{width:84px; height:22px; font-size:11px; color:#fff; text-align:center; line-height:22px; background:url(../images/aiqiyiimg/ct58.png) no-repeat;}
+.content6 .ct6d{width:982px; height:159px; border-top:2px solid #8ac024; border-left:1px solid #8ac024; border-right:1px solid #8ac024; border-bottom:1px solid #8ac024;}
+.content6 .ct6d img{margin-top:10px; margin-right:20px;}
+.content6 .ct6d .img7{margin:65px 5px;}
+.content6 .ct6d .img8{margin-right:-20px;}

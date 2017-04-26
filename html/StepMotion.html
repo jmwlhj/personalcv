@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分步运动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 50px;
+            color: #fff;
+            background: #000;
+        }
+        span{
+            opacity: 0;
+        }
+    </style>
+    <script src="../js/move.js"></script>
+    <script>
+        window.onload=function(){
+            var str="“春夏之交，草木际天。”欢迎大家在这个生机盎然的时节来到北京。首先，我谨代表中国政府和人民，并以我个人的名义，对来自亚信成员国、观察员国的外长和代表以及有关国际组织的负责人和代表，表示诚挚的欢迎！对本次会议的召开，表示热烈的祝贺！";
+            for(var i=0;i<str.length;i++){
+                var oSpan=document.createElement("span");
+                oSpan.innerHTML=str.charAt(i);
+                document.body.appendChild(oSpan)
+            }
+            var n=0;
+            var timer=null;
+            var aSpan=document.getElementsByTagName("span");
+            timer=setInterval(function(){
+                move(aSpan[n],{opacity:1});
+                n++;
+                if(n==aSpan.length){
+                    clearInterval(timer)
+                }
+            },100)
+        };
+    </script>
+</head>
+<body>
+
+</body>
+</html>

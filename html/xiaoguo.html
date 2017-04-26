@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标移入移出效果</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background: #c0c0c0;;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+            line-height: 200px;
+            text-align: center;
+            font-size: 20px;
+            overflow: hidden;
+        }
+        #box span{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: -200px;
+            top: 0;
+            background: red;
+            line-height: 200px;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            opacity: 0.3;
+        }
+    </style>
+    <script>
+        function getStyle(obj,name){
+            return(obj.currentStyle||getComputedStyle(obj,false))[name]
+        }
+        function move(obj,json,option){
+            var option=option||{};
+            option.duration=option.duration||800;
+            option.easing=option.easing||"ease-out";
+            var start={};
+            var dis={};
+            var count=Math.floor(option.duration/30);
+            for(var name in json){
+                start[name]=parseFloat(getStyle(obj,name));
+                dis[name]=json[name]-start[name]
+            }
+            var n=0;
+            clearInterval(obj.timer);
+            obj.timer=setInterval(function(){
+                n++;
+                for(var name in json){
+                    switch(option.easing){
+                        case"linear":
+                            var a=n/count;
+                            var cur=start[name]+dis[name]*a;
+                            break;
+                        case"ease-out":
+                            var a=1-n/count;
+                            var cur=start[name]+dis[name]*(1-a*a*a);
+                            break;
+                        case"ease-in":
+                            var a=n/count;
+                            var cur=start[name]+dis[name]*Math.pow(a,3);
+                            break;
+                        }
+                    if(name=="opacity"){
+                        obj.style.opacity=cur;
+                        obj.style.filter="alpha(opacity:"+cur*100+")"
+                    }else{
+                        obj.style[name]=cur+"px"
+                    }
+                }
+                if(n==count){
+                    clearInterval(obj.timer);
+                    option.complete&&option.complete()
+                }
+            },30)}
+            function hoverDis(obj,ev){
+                var x=obj.offsetLeft+obj.offsetWidth/2-ev.clientX;
+                var y=obj.offsetTop+obj.offsetHeight/2-ev.clientY;
+                return Math.round((Math.atan2(y,x)*180/Math.PI+180)/90)%4
+            }
+            window.onload=function(){
+                var oBox=document.getElementById("box");
+                var oSpan=oBox.children[0];
+                oBox.onmouseover=function(ev){
+                    var oEvent=ev||event;
+                    var from=oEvent.fromElement||oEvent.relatedTarget;
+                    if(oBox.contains(from)){return}
+                    var n=hoverDis(oBox,oEvent);
+                    switch(n){
+                        case 0:
+                            oSpan.style.left="200px";
+                            oSpan.style.top=0;
+                            break;
+                        case 1:
+                            oSpan.style.top="200px";
+                            oSpan.style.left=0;
+                            break;
+                        case 2:
+                            oSpan.style.top=0;
+                            oSpan.style.left="-200px";
+                            break;
+                        case 3:
+                            oSpan.style.top="-200px";
+                            oSpan.style.left=0;
+                            break;
+                    }
+                    move(oSpan,{left:0,top:0})
+                };
+                oBox.onmouseout=function(ev){
+                    var oEvent=ev||event;
+                    var to=oEvent.toElement||oEvent.relatedTarget;
+                    if(oBox.contains(to)){return}
+                    var n=hoverDis(this,oEvent);
+                    switch(n){
+                        case 0:
+                            move(oSpan,{left:200,top:0});
+                            break;
+                        case 1:
+                            move(oSpan,{left:0,top:200});
+                            break;
+                        case 2:
+                            move(oSpan,{left:-200,top:0});
+                            break;
+                        case 3:
+                            move(oSpan,{left:0,top:-200});
+                            break;
+                    }
+                }
+        };
+    </script>
+</head>
+<body>
+    <div id="box">
+        <span>一个span</span>
+    </div>
+</body>
+</html>

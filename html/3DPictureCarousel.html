@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>三维图片轮换</title>
+<link href="../css/zns_style.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.lazyload.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(
+    function($){
+        $("img").lazyload({
+            placeholder : "../js/grey.gif",
+            effect      : "fadeIn",
+            threshold : 200
+        });
+    });
+</script>
+<script>
+	function getStyle(obj,name){return(obj.currentStyle||getComputedStyle(obj,false))[name]}function move(obj,json,option){var option=option||{};option.duration=option.duration||800;option.easing=option.easing||"ease-out";var start={};var dis={};var count=Math.floor(option.duration/30);for(var name in json){start[name]=parseFloat(getStyle(obj,name));if(isNaN(start[name])){switch(name){case"top":start[name]=obj.offsetTop;break;case"left":start[name]=obj.offsetLeft;break}}dis[name]=json[name]-start[name]}var n=0;clearInterval(obj.timer);obj.timer=setInterval(function(){n++;for(var name in json){switch(option.easing){case"linear":var a=n/count;var cur=start[name]+dis[name]*a;break;case"ease-in":var a=n/count;var cur=start[name]+dis[name]*Math.pow(a,3);break;case"ease-out":var a=1-n/count;var cur=start[name]+dis[name]*(1-Math.pow(a,3));break}if(name=="opacity"){obj.style.opacity=cur;obj.style.filter="alpha(opacity:"+cur*100+")"}else{obj.style[name]=cur+"px"}}if(n==count){clearInterval(obj.timer);option.complete&&option.complete()}},30)}window.onload=function(){var oUl=document.getElementById("znsRotatePic");var aLi=oUl.children;var aImg=oUl.getElementsByTagName("img");var aA=oUl.getElementsByTagName("a");var oBtn1=document.getElementById("btn1");var oBtn2=document.getElementById("btn2");aA[0].onclick=function(){toLeft();return false};aA[2].onclick=function(){toRight();return false};var aPos=[];for(var i=0;i<aLi.length;i++){aPos[i]={left:aLi[i].offsetLeft,top:aLi[i].offsetTop,imgT:aImg[i].offsetTop,width:aImg[i].offsetWidth,height:aImg[i].offsetHeight,opacity:getStyle(aImg[i],"opacity"),fnClick:aA[i].onclick}}function toLeft(){aPos.push(aPos.shift());tab()}function toRight(){aPos.unshift(aPos.pop());tab()}function tab(){for(var i=0;i<aLi.length;i++){move(aLi[i],{left:aPos[i].left,top:aPos[i].top});move(aImg[i],{width:aPos[i].width,height:aPos[i].height,top:aPos[i].imgT,opacity:aPos[i].opacity});aA[i].onclick=aPos[i].fnClick}}};</script>
+</head>
+
+<body>
+<ul id="znsRotatePic">
+	<li class="pic1">
+		<a href="http://baidu.com/"><img src="../images/jsimg/pic1.gif" alt="pic1" class="unactive" longdesc="#" width="187" /></a><!-- 208 -->
+		<span></span>
+	</li>
+	<li class="pic2">
+		<a href="http://google.com/"><img src="../images/jsimg/pic2.gif" alt="pic2" longdesc="#" width="208" /></a>
+		<span></span>
+	</li>
+	<li class="pic3">
+		<a href="#"><img src="../images/jsimg/pic3.gif" alt="pic3" class="unactive" longdesc="#" width="187" /></a>
+		<span></span>
+	</li>
+</ul>
+
+</body>
+</html>

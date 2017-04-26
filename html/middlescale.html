@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作品展示</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #box{
+            width: 800px;
+            height: 358px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #ul1{
+            position: absolute;
+            top: 50%;
+            margin-top: -90px;
+        }
+        #ul1 li{
+            width: 260px;
+            height: 179px;
+            float: left;
+            padding: 0 10px;
+            position: relative;
+        }
+        #ul1 li img{
+            width: 100%;
+        }
+
+        #ul1 li span{
+            width: 100%;
+            height: 100%;
+            line-height: 179px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 100px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oBox=document.getElementById("box");
+            var oUl=document.getElementById("ul1");
+            var aLi=oUl.children;
+            var aImg=oUl.getElementsByTagName("img");
+            var l=aLi[0].offsetWidth;
+            oUl.style.width=l*aLi.length+"px";
+            var oBoxC=oBox.offsetWidth/2;
+            oUl.onmousedown=function(ev){
+                var oEvent=ev||event;
+                var disX=oEvent.clientX-oUl.offsetLeft;
+                document.onmousemove=function(ev){
+                    var oEvent=ev||event;
+                    var x=oEvent.clientX-disX;
+                    if(x>oBoxC-(1-0.5)*l){
+                        x=oBoxC-(1-0.5)*l
+                    }
+                    if(x<oBoxC-(aLi.length-0.5)*l){
+                        x=oBoxC-(aLi.length-0.5)*l
+                    }
+                    oUl.style.left=x+"px";
+                    setSize()
+                };
+                document.onmouseup=function(){
+                    document.onmousemove=null;
+                    document.onmouseup=null
+                };
+                return false
+            };
+            oUl.style.left=oBoxC-(3-0.5)*l+"px";
+            setSize();
+            function setSize(){
+                for(var i=0;i<aImg.length;i++){
+                    var c=Math.abs(oBoxC-(aLi[i].offsetWidth/2+aLi[i].offsetLeft+oUl.offsetLeft));
+                    var scale=1-c/500;scale<0.5&&(scale=0.5);
+                    aImg[i].style.width=520*scale+"px";
+                    aImg[i].style.marginLeft=-(520*scale-260)/2+"px";
+                    aImg[i].style.marginTop=-(358*scale-179)/2+"px";
+                    aLi[i].style.zIndex=scale*10000;
+                }
+            }
+        };
+    </script>
+</head>
+<body>
+<div id="box">
+    <ul id="ul1">
+        <li><img src="../images/scaleimg/1.jpg"></li>
+        <li><img src="../images/scaleimg/2.jpg"></li>
+        <li><img src="../images/scaleimg/3.jpg"></li>
+        <li><img src="../images/scaleimg/4.jpg"></li>
+        <li><img src="../images/scaleimg/5.jpg"></li>
+        <li><img src="../images/scaleimg/6.jpg"></li>
+        <li><img src="../images/scaleimg/7.jpg"></li>
+        <li><img src="../images/scaleimg/8.jpg"></li>
+        <li><img src="../images/scaleimg/9.jpg"></li>
+        <li><img src="../images/scaleimg/10.jpg"></li>
+        <li><img src="../images/scaleimg/11.jpg"></li>
+        <li><img src="../images/scaleimg/12.jpg"></li>
+        <li><img src="../images/scaleimg/13.jpg"></li>
+        <li><img src="../images/scaleimg/14.jpg"></li>
+        <li><img src="../images/scaleimg/15.jpg"></li>
+        <li><img src="../images/scaleimg/16.jpg"></li>
+        <li><img src="../images/scaleimg/17.jpg"></li>
+        <li><img src="../images/scaleimg/18.jpg"></li>
+        <li><img src="../images/scaleimg/19.jpg"></li>
+        <li><img src="../images/scaleimg/20.jpg"></li>
+        <li><img src="../images/scaleimg/21.jpg"></li>
+        <li><img src="../images/scaleimg/22.jpg"></li>
+        <li><img src="../images/scaleimg/23.jpg"></li>
+        <li><img src="../images/scaleimg/24.jpg"></li>
+        <li><img src="../images/scaleimg/25.jpg"></li>
+        <li><img src="../images/scaleimg/26.jpg"></li>
+    </ul>
+</div>
+</body>
+</html>
